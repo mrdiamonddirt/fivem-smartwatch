@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clockHour,
+.clockMinute {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: green;
+}
+
+.clockHour {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.clockSecond {
+    font-size: 1.5rem;
+    color: red;
+}
