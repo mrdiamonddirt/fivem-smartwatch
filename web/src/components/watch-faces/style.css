@@ -3,11 +3,15 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
 .clock {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-inline: 3rem;
+    height: 100%;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .clockHour,
@@ -25,4 +29,43 @@ body {
 .clockSecond {
     font-size: 1.5rem;
     color: red;
+}
+
+/* clock display info */
+
+.clockDisplayInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.healthBar,
+.foodBar,
+.waterBar {
+    width: 150px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.healthBarFill {
+    height: 100%;
+    background-color: #4caf50;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.foodBarFill {
+    height: 100%;
+    background-color: #f44336;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.waterBarFill {
+    height: 100%;
+    background-color: #2196f3;
+    width: 30%;
+    border-radius: 5px;
 }

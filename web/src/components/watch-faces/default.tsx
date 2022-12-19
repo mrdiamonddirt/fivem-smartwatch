@@ -12,11 +12,25 @@ function DefaultWatchFace() {
     const { hour, minute, second } = useTime();
     return (
         <>
-            {/* <div>DefaultWatchFace</div> */}
+            {/* <div className="defaultWatchFace"></div> */}
             <div className="clock">
                 <div className="clockHour">{hour}</div>
                 <div className="clockMinute">{minute}</div>
                 <div className="clockSecond">{second}</div>
+            </div>
+            <div className="clockDisplayInfo">
+                Health
+                <div className="healthBar">
+                    <div className="healthBarFill"></div>
+                </div>
+                Food
+                <div className="foodBar">
+                    <div className="foodBarFill"></div>
+                </div>
+                Water
+                <div className="waterBar">
+                    <div className="waterBarFill"></div>
+                </div>
             </div>
         </>
     );
